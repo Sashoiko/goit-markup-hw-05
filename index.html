@@ -27,11 +27,11 @@
 				<nav class="header-navigation">
 					<a href="./index.html" class="header-logo logo link"><span>Web</span>Studio</a>
 					<ul class="header-list">
-						<li class="header-item list"><a href="./index.html" class="navigation link open">Studio</a></li>
+						<li class="header-item list"><a href="./index.html" class="header-link-open navigation link open active">Studio</a></li>
 						<li class="header-item list"
-							><a href="./portfolio.html" class="header-link navigation link">Portfolio</a></li
+							><a href="./portfolio.html" class="header-link-open header-link navigation link">Portfolio</a></li
 						>
-						<li class="header-item list"><a href="" class="header-link navigation link">Contacts</a></li>
+						<li class="header-item list"><a href="" class="header-link-open header-link navigation link">Contacts</a></li>
 					</ul>
 				</nav>
 
@@ -52,7 +52,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
-					<button type="button" class="hero-btn btn">Order Service</button>
+					<button type="button" class="hero-btn btn" data-modal-open>Order Service</button>
 				</div>
 			</section>
 			<!-- Категорії-->
@@ -63,7 +63,7 @@
 						<li class="categoris-item">
 							<div class="categoris-pictures-blok">
 								<svg class="categoris-pictures-icon" width="64" height="64">
-								<use href="./images/symbol-defs2.svg#icon-antenna1"></use>
+								<use href="./images/symbol-defs.svg#icon-antenna1"></use>
 							</svg>
 						</div>
 							<h3 class="categoris-heading heading">Strategy</h3>
@@ -74,7 +74,7 @@
 						<li class="categoris-item">
 							<div class="categoris-pictures-blok">
 								<svg class="categoris-pictures-icon" width="64" height="64">
-								<use href="./images/symbol-defs2.svg#icon-clock1"></use>
+								<use href="./images/symbol-defs.svg#icon-clock1"></use>
 							</svg>
 						</div>							
 							<h3 class="categoris-heading heading">Punctuality</h3>
@@ -84,7 +84,7 @@
 						</li>
 						<li class="categoris-item">
 							<div class="categoris-pictures-blok"><svg class="categoris-pictures-icon" width="64" height="64">
-								<use href="./images/symbol-defs2.svg#icon-diagram1"></use>
+								<use href="./images/symbol-defs.svg#icon-diagram1"></use>
 							</svg></div>
 							
 							<h3 class="categoris-heading heading">Diligence</h3>
@@ -94,7 +94,7 @@
 						</li>
 						<li class="categoris-item">
 							<div class="categoris-pictures-blok"><svg class="categoris-pictures-icon" width="64" height="64">
-								<use href="./images/symbol-defs2.svg#icon-astronaut1"></use>
+								<use href="./images/symbol-defs.svg#icon-astronaut1"></use>
 							</svg></div>
 							
 							<h3 class="categoris-heading heading">Technologies</h3>
@@ -276,32 +276,32 @@
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group"></use></svg></a
 						></li>
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group1"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group1"></use></svg></a
 						></li>
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group2"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group2"></use></svg></a
 						></li>
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group3"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group3"></use></svg></a
 						></li>
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group4"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group4"></use></svg></a
 						></li>
 						<li class="customers-item"
 							><a href="#" class="customers-link"
 								><svg class="customers-icons" width="104" height="56">
-									<use href="./images/symbol-defs1.svg#icon-group5"></use></svg></a
+									<use href="./images/symbol-defs.svg#icon-group5"></use></svg></a
 						></li> </ul
 				></div>
 			</section>
@@ -348,5 +348,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal ">
+				<button type="button" class="modal-close" data-modal-close>
+					<svg class="modal-close-x" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-Vector4-1"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
