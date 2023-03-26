@@ -34,6 +34,10 @@ body {
         --color-link-and-btn: #4D5AE5;
         --main-indent: 120px 0;
         --icon-background: #4D5AE5;
+        --color-link-customers: #8E8F99;
+        --color-background: #FFFFFF;
+        --color-background-footer: #31D0AA;
+        --color-modal-background: #FCFCFC;
 
 }
 
@@ -124,7 +128,7 @@ body {
 .header {}
 
 .header-style {
-        border-bottom: 1px solid #E7E9FC;
+        border-bottom: 1px solid var(--color-border-btn-footlogo);
 }
 
 .header-blok {
@@ -171,16 +175,14 @@ body {
         position: absolute;
         left: 0px;
         bottom: -27px;
-        background-color: #404BBF;
+        background-color: var(--hover-color-mail-tel-btn);
         border-radius: 2px;
 }
 
 
 .header-link {
         color: var(--color-body);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -207,10 +209,7 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-mail:hover,
@@ -222,9 +221,7 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-tel:hover,
@@ -270,10 +267,7 @@ body {
         padding: 16px 32px;
         min-width: 169px;
         min-height: 56px;
-        transition-property: background,box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -308,7 +302,7 @@ body {
         display: flex;
         justify-content: center;
         padding: 24px 10px;  
-        background: #F4F4FD;
+        background: var(--color-background-team-btn);
         border-radius: 4px;
 } 
 
@@ -407,15 +401,13 @@ body {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        color: #F4F4FD;
+        color: var(--color-background-team-btn);
         background-color: var(--icon-background);
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover{
-       background-color: #404BBF;
+       background-color: var(--hover-color-mail-tel-btn);
 }
 
 .team-social-icon {
@@ -484,17 +476,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #8E8F99;
+        color: var(--color-link-customers);
         border-radius: 4px;
-        border: 1px solid #8E8F99;
-        transition-property: color, border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid var(--color-link-customers);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customers-link:is(:hover, :focus){
-        color: #404BBF;
-        border-color: #404BBF;
+        color: var(--hover-color-mail-tel-btn);
+        border-color: var(--hover-color-mail-tel-btn);
 }
         
 .customers-icons{
@@ -533,12 +524,9 @@ body {
 .button-item-btn {
         font-family: inherit;
         padding: 12px 24px;
-        border: 1px solid #E7E9FC;
+        border: 1px solid var(--color-border-btn-footlogo);
         border-radius: 4px;
-        transition-property: color, background, box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);     
 }
 
 .button-item-btn:hover,
@@ -580,9 +568,9 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #F4F4FD;
-        padding: 40px 32px 0;
-        background: #4D5AE5;
+        color: var(--color-background-team-btn);
+        padding: 40px 32px 20px;
+        background: var(--color-link-and-btn);
         position: absolute;
         overflow: auto;
         width: 100%;
@@ -590,7 +578,7 @@ body {
         top: 0;
         left: 0;
         transform: translateY(100%);
-        transition: transform 250ms;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -602,8 +590,8 @@ body {
 
 .application-blok {
         padding: 32px 16px;
-        background: #FFFFFF;
-        border: 1px solid #E7E9FC;
+        background: var(--color-background);
+        border: 1px solid var(--color-border-btn-footlogo);
         border-top: none;
 }
 
@@ -671,14 +659,11 @@ body {
         height: 40px;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
-        transition-property: background;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-item:is(:hover, :focus){
-        background: #31D0AA;
+        background: var(--color-background-footer);
 }
 
 
@@ -688,7 +673,7 @@ body {
         align-items: center;
         width: 100%;
         height: 100%;
-        color: #F4F4FD;
+        color: var(--color-background-team-btn);
         
 }
 
@@ -710,20 +695,19 @@ body {
 }
 
 .modal{
-        width: 408px;
+        max-width: 408px;
+        width: 100%;
         min-height: 576px;
         padding: 15px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
-        transition: transform 1500ms;
-        background: #FCFCFC;
+        transition: transform 500ms;
+        background: var(--color-modal-background);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        
-
-        
+        transition: opacity 250ms , visibility 250ms;       
 }
 
 
@@ -734,7 +718,7 @@ body {
         margin-right: 24px;
         display: block;
         margin-left: auto;
-        background: #E7E9FC;
+        background: var(--color-border-btn-footlogo);
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
 }
